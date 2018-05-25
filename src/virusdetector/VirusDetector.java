@@ -37,10 +37,7 @@ public class VirusDetector {
             MainFrame mf  =new MainFrame();
             mf.setResizable(false);
             mf.setVisible(true);
-            
-           
-             
-           
+                  
          
     }
     
