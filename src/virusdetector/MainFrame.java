@@ -249,12 +249,14 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         lbl_cpu_usage = new javax.swing.JLabel();
         customPanel1 = new virusdetector.CustomPanel();
+        jPanel5 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
         panel_performance1 = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         lbl_cpu_usage1 = new javax.swing.JLabel();
@@ -304,7 +306,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setText("VirusTotal");
+        jLabel21.setText("Virus Total");
         btn_virus_total.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 100, 30));
 
         lbl_virustotal.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -682,7 +684,7 @@ public class MainFrame extends javax.swing.JFrame {
                 java.lang.Integer.class, java.lang.Boolean.class, java.lang.Object.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false
+                false, true, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -848,6 +850,10 @@ public class MainFrame extends javax.swing.JFrame {
 
         bg.add(panel_performance, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 630, 390));
 
+        jPanel5.setBackground(new java.awt.Color(242, 234, 254));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        bg.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 630, 30));
+
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/virusdetector/sheild9.png"))); // NOI18N
@@ -860,7 +866,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel15.setText("This program uses a MD5 Hash Registry to detect malware. It will only tell you if the MD5 matches");
+        jLabel15.setText("This software uses a MD5 Hash Registry to detect malware. It will only tell you if the MD5 matches");
         jLabel15.setToolTipText("");
         jLabel15.setAlignmentY(0.0F);
 
@@ -869,36 +875,60 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel17.setText("a previously submitted file that was determined to be malware.");
         jLabel17.setAlignmentY(0.0F);
 
+        jLabel23.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel23.setText("It is also capable of generating a report on a file whether it is infected or not ");
+        jLabel23.setToolTipText("");
+        jLabel23.setAlignmentY(0.0F);
+
+        jLabel24.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel24.setText("via a API service supported by VirusTotal.com.");
+        jLabel24.setToolTipText("");
+        jLabel24.setAlignmentY(0.0F);
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(203, 203, 203))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, 610, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(220, 220, 220))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 536, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                    .addContainerGap(252, Short.MAX_VALUE)
+                    .addContainerGap(250, Short.MAX_VALUE)
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(143, Short.MAX_VALUE)))
+                    .addContainerGap(145, Short.MAX_VALUE)))
             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel4Layout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGap(20, 20, 20)))
+            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                    .addContainerGap(167, Short.MAX_VALUE)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap()))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(199, Short.MAX_VALUE)
-                .addComponent(jLabel14)
+                .addContainerGap(191, Short.MAX_VALUE)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel15)
-                .addGap(110, 110, 110))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46))
             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel4Layout.createSequentialGroup()
                     .addContainerGap()
@@ -909,13 +939,14 @@ public class MainFrame extends javax.swing.JFrame {
                     .addContainerGap(245, Short.MAX_VALUE)
                     .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(83, 83, 83)))
+            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                    .addContainerGap(266, Short.MAX_VALUE)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap()))
         );
 
         bg.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 620, 360));
-
-        jPanel5.setBackground(new java.awt.Color(242, 234, 254));
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        bg.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 630, 30));
 
         panel_performance1.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -1109,6 +1140,7 @@ public class MainFrame extends javax.swing.JFrame {
         //button4.setVisible(false);
         bg_delete.setVisible(false);
         lbl_delete.setVisible(false);
+        jScrollPane2.setVisible(false);
         loading.setVisible(true);
         malware = "";
         DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
@@ -1184,6 +1216,8 @@ public class MainFrame extends javax.swing.JFrame {
                     //button4.setVisible(true);
                     if(model.getRowCount()>0){
                         // create an audiostream from the inputstream
+                       
+                         /*
                         AudioStream audioStream;
                         try {
                             String gongFile = "C:\\Users\\ARS\\Documents\\NetBeansProjects\\VirusDetector\\ScanComplete.wav";
@@ -1193,6 +1227,8 @@ public class MainFrame extends javax.swing.JFrame {
                         } catch (IOException ex) {
                             Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
                         }
+                        */
+                        
                         loading.setVisible(false);
                         jScrollPane2.setVisible(true);    
                         // play the audio clip with the audioplayer class
@@ -1271,6 +1307,7 @@ public class MainFrame extends javax.swing.JFrame {
         
         backToNomalColor(btn_virusScan);
         backToNomalColor(btn_performance);
+        backToNomalColor(btn_virus_total);
         panel_sacn.setVisible(false);
         panel_performance.setVisible(false);
         panel_virus_total.setVisible(false);
@@ -1341,6 +1378,7 @@ public class MainFrame extends javax.swing.JFrame {
             public void run() {
                 try {
                     jScrollPane4.setVisible(false);
+                    jScrollPane3.setVisible(false);
                     loading.setVisible(true);
                     
                     DefaultTableModel model = (DefaultTableModel)scan_table.getModel();
@@ -1392,11 +1430,12 @@ public class MainFrame extends javax.swing.JFrame {
         new Thread(){
             public void run(){
                 jScrollPane3.setVisible(false);
+                jScrollPane4.setVisible(false);
                 loading.setVisible(true);
                 
                 DefaultTableModel model = (DefaultTableModel)report_table.getModel();
                 
-                String fileId = "1947b44cc6f64e565d8a4215bc655315";
+                String fileId = "1947b44cc6f64e565d8a4215bc655315";//scan_ID;
                 
                 
                 FileScanReport fileReport = virusTotal.getFileReport(fileId);
@@ -1515,6 +1554,8 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
