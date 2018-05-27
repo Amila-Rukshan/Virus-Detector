@@ -1,7 +1,7 @@
 # Virus-Detector
-This is a program that can detect virus on your PC. It uses a MD5 hash registry from VirusShare.com.
+This is a program that can detect virus on your PC. It uses a MD5 hash registry from VirusShare.com. It is capable of generating a report on a file whether it is infected or not. If infected then the type of virus identification. This is done using a API service supplied by VirusTotal.com.
 
-Following images shows Screenshots of the program.
+Following few screenshots show how it works.
 
 1. Start Screen.
 ![1](https://user-images.githubusercontent.com/22471342/40419259-5f93f112-5ea2-11e8-80c7-749e1e265916.png)
