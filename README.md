@@ -4,10 +4,10 @@ This is a program that can detect virus on your PC. It uses a MD5 hash registry 
 Following few screenshots show how it works.
 
 1. Start Screen.
-![1](https://user-images.githubusercontent.com/22471342/40419259-5f93f112-5ea2-11e8-80c7-749e1e265916.png)
+![srts](https://user-images.githubusercontent.com/22471342/40586068-9efce180-61d9-11e8-9e20-65188539eb00.png)
 
 2. Virus Scan Screen using local database from VirusShare.com.
-![2](https://user-images.githubusercontent.com/22471342/40419263-610d6082-5ea2-11e8-895a-94ebd3fdd068.png)
+![4](https://user-images.githubusercontent.com/22471342/40586052-583475a6-61d9-11e8-93cc-52ffe0cf7b1c.png)
 
 3. Uploading file for sacn via VirusTotal.com.
 ![untitled-1](https://user-images.githubusercontent.com/22471342/40585772-e50a17c8-61d5-11e8-8c9f-1606b241b3b3.png)
@@ -19,4 +19,5 @@ Following few screenshots show how it works.
 ![untitled-3](https://user-images.githubusercontent.com/22471342/40585774-e5a53b90-61d5-11e8-8e41-7704a72fd990.png)
 
 6. Performance View Screen.
-![3](https://user-images.githubusercontent.com/22471342/38454011-bf949714-3a7c-11e8-8887-353c60698c77.png)
+![perfrmance](https://user-images.githubusercontent.com/22471342/40586083-d785189c-61d9-11e8-9d5a-01ad51797c2f.png)
+
